@@ -101,7 +101,7 @@ sudo make
 
 ![Listen to the port](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/Runserverscreenshot.png?raw=true)
 
-![Receive and echo back clients' message](![image](https://user-images.githubusercontent.com/64098916/200217221-2438aa0d-8a28-4795-8af4-6ace8a8e29f0.png)
+![Receive and echo back clients' message](https://user-images.githubusercontent.com/64098916/200217221-2438aa0d-8a28-4795-8af4-6ace8a8e29f0.png)
 
 
 ### Run Client TCP Service 
