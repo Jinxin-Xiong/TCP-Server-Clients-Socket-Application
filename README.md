@@ -34,6 +34,7 @@ We Implemet an application in C++ on Linux to create the connections between mul
 
 ## Code Style
 
+![Code style](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/codestyle.png?raw=true) 
 
 
 ## Build and Run
