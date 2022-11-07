@@ -5,7 +5,6 @@
 We Implemet an application in C++ on Linux to create the connections between multiple clients and server using TCP 
 
 ![Supported Platforms](https://img.shields.io/badge/platform-Linux-red.svg)
-[![Build Status]()]()
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/LICENSE)
 
 
@@ -26,10 +25,15 @@ We Implemet an application in C++ on Linux to create the connections between mul
   ​	3. Receive the server's response in time, and print the response message on the terminal.
   ​	4. The main thread is used to deal with "send task", the child thread is used to deal with "receive/print task".
   ​	5. Implement this application in C/C++ on Linux.
+  
+  
+## Code File Stucture
+
+![All the files](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/Codefilescreenshot.png?raw=true)
 
 ## Build and Run
 
-* build
+### Build the programe
 
 ```
 git clone https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application.git
@@ -37,14 +41,16 @@ cd TCP-Server-Clients-Socket-Application
 sudo make
 ```
 
-* Service would be generated in build directory
+![How to build](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/CompileScreenshot.png?raw=true)
 
-```
-cd build
-```
+
+* Service would be generated in parent directory
 
 * Run server before cliens
+
 * `Ctrl + c` to interrupt blocking server and client process
+
+![The executables](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/Executablesscreenshot.png?raw=true)
 
 
 ### Configure some common parameters in CommonHead.h []
@@ -73,17 +79,18 @@ cd build
 * Run server service on the server side:
 
 ```
-cd build
 ./TCPServerClients_server
 ```
 ​	The status after you start the server service (Listen to the target port)：
 
-![The status in terminal](./img/1.png)
+![Listen to the port](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/Runserverscreenshot.png?raw=true)
+
+![Receive and echo back clients' message](![image](https://user-images.githubusercontent.com/64098916/200217221-2438aa0d-8a28-4795-8af4-6ace8a8e29f0.png)
 
 
 ### Run Client TCP Service 
 
-* Run client in another shell
+* Run client on client side
 
 ​	There are two options：
 1) Default option: The Server IP and Port are default set in CommonHead.h;   
@@ -96,9 +103,13 @@ cd build
 /*****  Option 2: Command Line option    *****/
 ./TCPServerClients_client IP Port (ex. ./TCPServerClients_client 127.0.0.1 8080) 
 ```
+![Communication with Server](![image](https://user-images.githubusercontent.com/64098916/200217023-aeb25728-e196-44f2-bd00-24719f131132.png)
 
 
-### Demonstration
+## Demonstration
 
+* Tips: Since there is only one desktop in working place, I just run one server terminal and six client terminals in the same computer (local network). The demostration is as below: 
 
-### Test Result
+* In future, it would be necessary to test this program in the real server-multi client scenario: 
+
+![One server - six clients](https://github.com/Jinxin-Xiong/TCP-Server-Clients-Socket-Application/blob/main/img/ServerMultiClientsDemo.png?raw=true)
