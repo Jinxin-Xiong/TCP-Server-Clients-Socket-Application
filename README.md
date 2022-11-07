@@ -18,7 +18,7 @@ We Implemet an application in C++ on Linux to create the connections between mul
   ​	4. Real-time receive the clients' messages and echo back to the responding clients in time.
   ​	5. Implement this application in C/C++ on Linux, and multi-thread is applied.
   
-* CLient Side:
+* Clientt Side:
 
   ​	1. Two options to start the client service (Default option and command line option).
   ​	2. Send the message to the server periodically (one time each second).
@@ -108,7 +108,7 @@ sudo make
 
 ## Demonstration
 
-* Tips: Since there is only one desktop in working place, I just run one server terminal and six client terminals in the same computer (local network). The demostration is as below: 
+* Tips: Since there is only one desktop in working place, I just run one server terminal and six client terminals in the same computer (local network). But generally, this program can support much more than six clients
 
 * In future, it would be necessary to test this program in the real server-multi client scenario: 
 
