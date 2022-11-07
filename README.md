@@ -12,19 +12,29 @@ We Implemet an application in C++ on Linux to create the connections between mul
 
 * Server Side:
 
-  ​	1. Create the server socket based on TCP.
-  ​	2. Listening on a target port (Default: 8080).
-  ​	3. Support to accept multiple clients.
-  ​	4. Real-time receive the clients' messages and echo back to the responding clients in time.
-  ​	5. Implement this application in C/C++ on Linux, and multi-thread is applied.
+  ​	1. Create the server socket based on TCP. 
   
-* Clientt Side:
+  ​	2. Listening on a target port (Default: 8080). 
+  
+  ​	3. Support to accept multiple clients. 
+  
+  ​	4. Real-time receive the clients' messages and echo back to the responding clients in time. 
+  
+  ​	5. Implement this application in C/C++ on Linux, and multi-thread is applied. 
+  
+  
+* Client Side:
 
   ​	1. Two options to start the client service (Default option and command line option).
+  
   ​	2. Send the message to the server periodically (one time each second).
+  
   ​	3. Receive the server's response in time, and print the response message on the terminal.
+  
   ​	4. The main thread is used to deal with "send task", the child thread is used to deal with "receive/print task".
+  
   ​	5. Implement this application in C/C++ on Linux.
+  
   
   
 ## Code File Stucture
